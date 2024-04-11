@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect Example</title>
+</head>
+<body>
+    <h1>Redirect Example</h1>
+    <form action="/redirect" method="POST">
+        <button type="submit">Redirect to About Page</button>
+    </form>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</body>
+</html>

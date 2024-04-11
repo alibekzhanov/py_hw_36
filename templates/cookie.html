@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Language</title>
+</head>
+<body>
+    <h1>Select Language</h1>
+    <form action="/set-cookie" method="POST">
+        <label for="lang">Choose a language:</label>
+        <select name="lang" id="lang">
+            <option value="en">English</option>
+            <option value="ru">Russian</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</body>
+</html>
